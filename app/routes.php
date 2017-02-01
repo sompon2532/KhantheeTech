@@ -1,7 +1,5 @@
 <?php
 
-use Slim\Views\Twig;
+$app->get('/admin', ['App\Controllers\Backoffice\IndexController', 'index'])->setName('admin.index');
 
-$app->get('/', function ($response, Twig $twig) {
-    return $twig->render($response, 'home.twig');
-});
+$app->get('/', ['App\Controllers\HomeController', 'index'])->setName('home');
