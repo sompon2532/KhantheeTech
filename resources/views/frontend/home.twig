@@ -1,0 +1,46 @@
+{% extends 'templates/frontend/app.twig' %}
+
+
+{% block content %}
+    <div class="home_bg_section">
+    	<img src="{{ base_url() }}/assets/frontend/images/home/bg_section.jpg">
+    </div>
+
+    <div class="web_tagline">
+        <p>ขายเหล็กดี.com เพือนคู่คิดที่วางใจได้ของคุณ</p>
+        <p>จำหน่ายเหล็กเพื่อการก่อสร้าง <b><i>ราคาย่อมเยาว์</i></b> ด้วย <b><i>คุณภาพสูง ได้มาตรฐาน</i></b> จัดส่งทั่วประเทศ</p>
+        <p>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+        </p>
+    </div>
+
+    <div class="web_production">
+        <p>ทำไมเราถึงขายได้ถูกกว่า?</p>
+        <img src="{{ base_url() }}/assets/frontend/images/home/production.jpg">
+    </div>
+
+    <div class="web_product">
+        <div class="product">
+            <a href="">
+                <img src="{{ base_url() }}/assets/frontend/images/home/product_1.jpg">
+                <p>เหล็กเส้นกลม SR24</p>
+            </a>
+        </div>
+
+        <div class="product">
+            <a href="">
+                <img src="{{ base_url() }}/assets/frontend/images/home/product_2.jpg">
+                <p>เหล็กข้ออ้อย SD 40</p>
+            </a>
+        </div>
+
+        <div class="product">
+            <a href="">
+                <img src="{{ base_url() }}/assets/frontend/images/home/product_3.jpg">
+                <p>เหล็กรูปพรรณ</p>
+            </a>
+        </div>
+    </div>
+{% endblock %}

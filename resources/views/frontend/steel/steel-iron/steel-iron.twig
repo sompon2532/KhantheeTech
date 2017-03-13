@@ -1,0 +1,37 @@
+{% extends 'templates/frontend/app.twig' %}
+
+{% block content %}
+	<h2 class="title">เหล็กแผ่น</h2>
+	<div class="box-element">
+		<div class="element-image">
+			<a href="{{ path_for('flat-bar.index') }}">
+				<img src="{{ base_url() }}/assets/frontend/images/steel/steel-iron/flat-bar/flat-bar.jpg">
+			</a>
+		</div>
+		<div class="element-detail">
+			<p>เหล็กแบน</p>
+		</div>
+	</div>
+
+	<div class="box-element">
+		<div class="element-image">
+			<a href="{{ path_for('steel-plate.index') }}">
+				<img src="{{ base_url() }}/assets/frontend/images/steel/steel-iron/steel-plate/steel-plate.jpg">
+			</a>
+		</div>
+		<div class="element-detail">
+			<p>เหล็กแผ่นดำ</p>
+		</div>
+	</div>
+
+	<div class="box-element">
+		<div class="element-image">
+			<a href="{{ path_for('checkered-plate.index') }}">
+				<img src="{{ base_url() }}/assets/frontend/images/steel/steel-iron/checkered-plate/checkered-plate.jpg">
+			</a>
+		</div>
+		<div class="element-detail">
+			<p>เหล็กแผ่นลาย</p>
+		</div>
+	</div>
+{% endblock %}

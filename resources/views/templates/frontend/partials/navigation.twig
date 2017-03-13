@@ -1,35 +1,39 @@
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
+<nav class="navbar">
+    <div class="nav-container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
             <a class="navbar-brand" href="#">
                 <img src="{{ base_url() }}/assets/frontend/images/logo.png">
             </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
+        <div class="navbar-menu">
+            <div>
+                <h1 class="brand-name">ขายเหล็กดี.com</h1>
+                <input type="text" name="search" class="search">
+            </div>
+            <ul class="nav">
+                <li><a href="{{ path_for('index') }}">หน้าแรก</a></li>
+                <li><a href="{{ path_for('round-bar.index') }}">เหล็กเส้นกลม SR24</a></li>
+                <li><a href="{{ path_for('deformed-bar.index') }}">เหล็กข้ออ้อย SD 40</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
+                    <a href="">เหล็กรูปพรรณ</a>
+                    <ul>
+                        <li>
+                            <a href="{{ path_for('steel-iron.index') }}">เหล็กแผ่น</a>
+                        </li>
+                        <li>
+                            <a href="{{ path_for('cold-formed-structural-steel.index') }}">เหล็กโครงสร้างรูปพรรณขึ้นรูปเย็น</a>
+                        </li>
+                        <li>
+                            <a href="{{ path_for('hot-rolled-structural-steel.index') }}">เหล็กโครงสร้างรูปพรรณรีดร้อน</a>
+                        </li>
                     </ul>
                 </li>
+                <li><a href="{{ path_for('service.index') }}">สินค้าและบริการอื่น ๆ</a></li>
+                <li><a href="{{ path_for('working.index') }}">ผลงานของเรา</a></li>
+                <li><a href="{{ path_for('contact.index') }}" style="margin-right: 0px">ติดต่อเรา</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

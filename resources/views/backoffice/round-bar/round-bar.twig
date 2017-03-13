@@ -1,0 +1,18 @@
+{% extends 'templates/backoffice/app.twig' %}
+
+{% block content %}
+	<div class="row">
+		<div>
+			<img src="{{ base_url() }}/assets/frontend/images/round/round-bar.jpg">
+		</div>
+
+		<div>
+			<img src="{{ base_url() }}/assets/frontend/images/round/round_detail.jpg">
+		</div>
+		<form method="post" enctype="multipart/form-data">
+			<input type="file" name="header">
+			<input type="file" name="body">
+			<input type="submit">
+		</form>
+	</div>
+{% endblock %}

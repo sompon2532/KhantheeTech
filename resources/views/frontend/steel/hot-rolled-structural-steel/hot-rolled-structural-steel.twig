@@ -1,0 +1,59 @@
+{% extends 'templates/frontend/app.twig' %}
+
+{% block content %}
+	<h2 class="title">เหล็กโครงสร้างรูปพรรณรีดร้อน</h2>
+	<div class="box-element">
+		<div class="element-image">
+			<a href="{{ path_for('channel.index') }}">
+				<img src="{{ base_url() }}/assets/frontend/images/steel/hot-rolled-structural-steel/channel/channel.jpg">
+			</a>
+		</div>
+		<div class="element-detail">
+			<p>เหล็กรางน้ำ</p>
+		</div>
+	</div>
+
+	<div class="box-element">
+		<div class="element-image">
+			<a href="{{ path_for('h-beam.index') }}">
+				<img src="{{ base_url() }}/assets/frontend/images/steel/hot-rolled-structural-steel/h-beam/h-beam.jpg">
+			</a>
+		</div>
+		<div class="element-detail">
+			<p>เหล็กเอชบีม</p>
+		</div>
+	</div>
+
+	<div class="box-element">
+		<div class="element-image">
+			<a href="{{ path_for('i-beam.index') }}">
+				<img src="{{ base_url() }}/assets/frontend/images/steel/hot-rolled-structural-steel/i-beam/i-beam.jpg">
+			</a>
+		</div>
+		<div class="element-detail">
+			<p>เหล็กไอบีม</p>
+		</div>
+	</div>
+
+	<div class="box-element">
+		<div class="element-image">
+			<a href="{{ path_for('wide-flange.index') }}">
+				<img src="{{ base_url() }}/assets/frontend/images/steel/hot-rolled-structural-steel/wide-flange/wide-flange.jpg">
+			</a>
+		</div>
+		<div class="element-detail">
+			<p>เหล็กไวด์แฟลงค์</p>
+		</div>
+	</div>
+
+	<div class="box-element">
+		<div class="element-image">
+			<a href="{{ path_for('wire-mesh.index') }}">
+				<img src="{{ base_url() }}/assets/frontend/images/steel/hot-rolled-structural-steel/wire-mesh/wire-mesh.jpg">
+			</a>
+		</div>
+		<div class="element-detail">
+			<p>ตะแกรงไวร์เมช</p>
+		</div>
+	</div>
+{% endblock %}
